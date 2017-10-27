@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fishingmanagerservice="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/customer_manager"
+        android:orderInCategory="3"
+        fishingmanagerservice:showAsAction="never"
+        android:title="@string/customer_manager"/>
+
+    <item
+        android:id="@+id/report"
+        android:orderInCategory="2"
+        fishingmanagerservice:showAsAction="ifRoom|withText"
+        android:icon="@android:drawable/ic_menu_report_image"
+        android:title="@string/report"/>
+    <item
+        android:id="@+id/add_customer"
+        android:orderInCategory="1"
+        fishingmanagerservice:showAsAction="ifRoom|withText"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/add_customer"/>
+    <item
+        android:id="@+id/action_other"
+        android:orderInCategory="4"
+        fishingmanagerservice:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Other"/>
+</menu>
